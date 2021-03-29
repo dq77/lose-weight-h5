@@ -1,0 +1,16 @@
+{
+  "id": "2036807",
+  "name": "减肥网页版",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1138726",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    }
+  ]
+}

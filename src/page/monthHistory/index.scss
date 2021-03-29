@@ -1,0 +1,49 @@
+/*
+ * @Author: 刁琪
+ * @Date: 2019-09-10 17:23:58
+ * @LastEditors: わからないよう
+ * @LastEditTime: 2020-08-28 17:28:13
+ */ 
+.month-history-page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .title{
+    background-color: #FFF;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D6E4EF;
+  }
+  .list{
+    flex: 1 0 auto;
+    .item{
+      background-color: #FFF;
+      border-bottom: 1px solid #D6E4EF;
+      padding: 10px 15px;
+      color: #333;
+      font-size: 12px;
+      line-height: 12px;
+      .weight{
+        font-size: 24px;
+        line-height: 24px;
+      }
+      .info{
+        display: flex;
+        justify-content: space-between;
+        margin: 6px 0 0;
+        .than{
+          font-size: 14px;
+          color: #409eff;
+        }
+        .yellow{
+          color: #e6a23c;
+        }
+        .green{
+          color: #67c23a;
+        }
+      }
+    }
+  }
+}

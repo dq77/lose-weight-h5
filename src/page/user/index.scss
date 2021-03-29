@@ -1,0 +1,116 @@
+/*
+ * @Author: 刁琪
+ * @Date: 2019-09-10 16:31:17
+ * @LastEditors: わからないよう
+ * @LastEditTime: 2020-08-28 14:52:54
+ */ 
+.user-page{
+  background-color: #FFF;
+  min-height: 100%;
+  .top{
+    color: #FFF;
+    height: 150px;
+    padding-bottom: 30px;
+    background: url('../../lib/image/user/user-bg.png');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .user-area{
+      height: 60px;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .left-area{
+        display: flex;
+        flex-direction: row;
+        .user-pic{
+          width: 60px;
+          background-color: #FFF;
+          border-radius: 60px;
+          overflow: hidden;
+          .img{
+            width: 60px;
+            height: 70px;
+          }
+        }
+        .user-info{
+          display: block;
+          margin-left: 20px;
+          .name{
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 20px;
+            margin: 10px 0;
+          }
+        }
+      }
+      .right-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .right-img{
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+  }
+  .mid-area{
+    padding: 0 20px;
+    color: #333;
+    .window{
+      height: 60px;
+      margin-top: -30px;
+      background-color: #FFF;
+      box-shadow: 0 4px 4px 0 rgba(173,179,191,0.3);
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      .item{
+        text-align: center;
+        .num{
+          font-size: 24px;
+          margin: 4px 0 12px;
+        }
+      }
+    }
+  }
+  .menu-list{
+    padding: 20px 0;
+    .item{
+      background-color: #FFF;
+      border-bottom: 1px solid #D6E4EF;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 20px 12px;
+      .text{
+        font-size: 16px;
+        line-height: 16px;
+        height: 16px;
+        flex: 1 0 auto;
+        display: flex;
+        .infor{
+          color: #888;
+          font-size: 12px;
+          line-height: 12px;
+          height: 12px;
+          margin: 2px 0 0 4px;
+        }
+      }
+      .menu-img{
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .item.true{
+      animation: todark 0.1s;
+      @keyframes todark{
+        from {background: #FFF;}
+        to {background: #EFEFEF;}
+      }
+      background-color: #EFEFEF;
+    }
+  }
+}

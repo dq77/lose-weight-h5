@@ -1,0 +1,40 @@
+/*
+ * @Author: 刁琪
+ * @Date: 2019-09-10 17:23:58
+ * @LastEditors: わからないよう
+ * @LastEditTime: 2020-08-28 11:14:17
+ */ 
+.login-page{
+  height: 100%;
+  background-color: #fff;
+  .top-info{
+    font-size: 26px;
+    font-weight: bold;
+    padding: 40px 0 10px 20px;
+  }
+  .form-area{
+    .ipt-area{
+      padding: 20px 20px 0;
+      .ipt{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #EBEBEB;
+        padding: 10px 0;
+      }
+      .ipt::-webkit-input-placeholder { /* WebKit browsers 适配谷歌 */
+        color: #CCC;
+      }
+    }
+  }
+  .sign-area{
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .creat{
+    text-align: right;
+    .creat-btn{
+      margin-right: 20px;
+      color: #666;
+    }
+  }
+}

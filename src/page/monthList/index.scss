@@ -1,0 +1,101 @@
+/*
+ * @Author: 刁琪
+ * @Date: 2020-07-23 20:00:23
+ * @LastEditors: わからないよう
+ * @LastEditTime: 2020-09-07 16:43:17
+ */ 
+ .monthlist-page{
+  width: 100%;
+  .top-list{
+    margin-bottom: 15px;
+    .am-list-content, .am-list-extra{
+      padding-top: 8px;
+      padding-bottom: 6px;
+    }
+    .am-list-extra{
+      flex-basis: auto;
+    }
+  }
+  .report-box{
+    width: 100%;
+    display: flex;
+    border-collapse: collapse;
+    td{
+      background-color: #FFF;
+      color: #606266;
+      width: 70px;
+      font-size: 14px;
+      line-height: 14px;
+      border-right: 1px solid #ebeef5;
+      border-bottom: 1px solid #ebeef5;
+      padding: 10px 0 8px;
+      text-align: center;
+    }
+    td:nth-child(2n){
+      background-color: #fafafa;
+    }
+    .bbline{
+      border-bottom: 1px solid #DCDFE6;
+    }
+    .left-area{
+      width: 47px;
+      .content-area{
+        overflow: hidden;
+      }
+    }
+    .right-area{
+      .content-area{
+        overflow: scroll;
+        .right-content-table{
+          table-layout:fixed;
+          .nickname{
+            width: 70px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-weight: bold;
+            background-color: #ecf5ff;
+          }
+          .yellow{
+            background-color: #fdf5e6;
+            // color: #e6a23c;
+          }
+          .green{
+            background-color: #f0f9eb;
+            // color: #67c23a;
+          }
+        }
+      }
+    }
+  }
+  .report-box.true{
+    display: none;
+  }
+  .report-box.trueactive{
+    padding-bottom: 270px;
+  }
+  .loading-tip{
+    text-align: center;
+    color: #606266;
+    margin-top: 40px;
+  }
+  .echart-area{
+    background-color: #f5f5f9;
+    z-index: 6;
+    height: 270px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .info-tip{
+    margin-left: 14px;
+    font-size: 14px;
+    color: #606266;
+  }
+  .sign-area{
+    margin-top: 50px;
+    padding: 20px;
+  }
+}
