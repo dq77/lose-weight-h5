@@ -18,6 +18,8 @@ import Login from './page/login/index';
 import Register from './page/login/register';
 import MonthHistory from './page/monthHistory/index';
 import Kefu from './page/kefu/index';
+import UserSetting from './page/userSetting/index';
+import Minapp from './page/minapp/index';
 
 ReactDOM.render(
   <HashRouter>
@@ -28,6 +30,8 @@ ReactDOM.render(
     <Route path='/register' component={ Register } />
     <Route path='/monthHistory' component={ MonthHistory } />
     <Route path='/kefu' component={ Kefu } />
+    <Route path='/userSetting' component={ UserSetting } />
+    <Route path='/minapp' component={ Minapp } />
     <Route path='/qiandao' component={ Qiandao } />
     <Route path='/weekList/:id' component={ WeekList } />
     <Route path='/monthList/:id' component={ MonthList } />

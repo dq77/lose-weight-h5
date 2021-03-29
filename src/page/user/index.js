@@ -75,6 +75,9 @@ class User extends React.Component {
   toServe = () => {
     this.props.history.push({ pathname: `/kefu` });
   }
+  toSetting = () => {
+    this.props.history.push({ pathname: `/userSetting` });
+  }
 
   touch = (num) => {
     this.setState({
@@ -147,6 +150,10 @@ class User extends React.Component {
           </div>
           <div className={`item ${touchItem === 5}`} onClick={this.toServe} onTouchStart={() => { this.touch(5) }} onTouchEnd={ this.touchStop }>
             <div className='text'>联系客服</div>
+            <img className='menu-img' src={menuPic} alt='right' />
+          </div>
+          <div className={`item ${touchItem === 6}`} onClick={this.toSetting} onTouchStart={() => { this.touch(6) }} onTouchEnd={ this.touchStop }>
+            <div className='text'>更多设置 </div>
             <img className='menu-img' src={menuPic} alt='right' />
           </div>
         </div>

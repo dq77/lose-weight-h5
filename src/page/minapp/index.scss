@@ -1,0 +1,28 @@
+/*
+ * @Author: 刁琪
+ * @Date: 2019-09-10 17:23:58
+ * @LastEditors: わからないよう
+ * @LastEditTime: 2020-08-28 13:42:13
+ */ 
+.minapp-page{
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .text{
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .kefu-img{
+    width: 200px;
+    height: 200px;
+  }
+  .min-name{
+    margin-top: 4px;
+    font-size: 18px;
+    color: #28B6BA;
+    font-weight: bold;
+  }
+}
