@@ -5,7 +5,7 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 import './lib/font/iconfont.css';
 import './index.css';
 import App from './App';
@@ -22,7 +22,7 @@ import UserSetting from './page/userSetting/index';
 import Minapp from './page/minapp/index';
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <Route exact path='/' render={() => <Redirect to='/user' push />} />
     <Route path='/index' component={ App } />
     <Route path='/user' component={ App } />
@@ -36,7 +36,7 @@ ReactDOM.render(
     <Route path='/weekList/:id' component={ WeekList } />
     <Route path='/monthList/:id' component={ MonthList } />
     <Route path='/newGroup' component={ NewGroup } />
-  </HashRouter>
+  </BrowserRouter>
   , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
