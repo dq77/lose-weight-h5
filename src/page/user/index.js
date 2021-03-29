@@ -9,7 +9,7 @@ import { Toast } from 'antd-mobile';
 import { withRouter } from "react-router-dom";
 import './index.scss'
 import { dateFormat } from '../../utils/date'
-import { getCookie, setCookie, delCookie } from '../../utils/cookie'
+import { getCookie, delCookie } from '../../utils/cookie'
 import userPic from '../../lib/image/user/user.png'
 import rightPic from '../../lib/image/user/right.png'
 import menuPic from '../../lib/image/user/menu-right.png'

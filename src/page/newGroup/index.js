@@ -9,7 +9,7 @@ import React from 'react'
 import { List, InputItem, Button, Modal, Toast } from 'antd-mobile';
 import { createForm } from 'rc-form';
 import copy from 'copy-to-clipboard';
-import { getCookie, setCookie, delCookie } from '../../utils/cookie'
+import { setCookie, delCookie } from '../../utils/cookie'
 import { creatGroup } from '../../api/qiandao';
 
 class Group extends React.Component {

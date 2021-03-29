@@ -65,6 +65,7 @@ class WeekList extends React.Component {
           })[0]
           member.monthReduce = monthReduce ? monthReduce.monthReduce : '-'
           member.monthTargetWeight = monthTargetWeight ? monthTargetWeight.monthTargetWeight : '-'
+          return false
         })
         this.setState({
           weekGroupDatas: res.data.groupMembers,

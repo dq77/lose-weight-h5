@@ -7,7 +7,7 @@
 import './index.scss'
 import React from 'react'
 import { Button, Toast } from 'antd-mobile';
-import { getCookie, setCookie, delCookie } from '../../utils/cookie'
+import { setCookie } from '../../utils/cookie'
 import { login } from '../../api/user';
 
 class Login extends React.Component {
