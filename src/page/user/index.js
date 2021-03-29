@@ -24,7 +24,7 @@ class User extends React.Component {
     }
   }
   componentDidMount() {
-    document.title='我的'
+    document.title='减重打卡助手'
     const qiandaoInfo = getCookie('qiandaoInfo')
     if (qiandaoInfo) {
       try {

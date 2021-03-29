@@ -16,11 +16,56 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>减重打卡助手</title>
+    <style>
+      .loading{
+        text-align: center;
+        height: 15px;
+        margin: 0 auto;
+        margin-top:200px;
+      }
+      .loading span{
+        display: inline-block;
+        width: 15px;
+        height: 100%;
+        margin: 0 3px;
+        border-radius: 50%;
+        background: lightgreen;
+        animation: load 1.06s ease infinite;
+      }
+      @keyframes load{
+        0%{ opacity: 1; }
+        50%{ opacity: 0; }
+        100%{ opacity: 1; }
+      }
+      .loading span:nth-child(1){
+        animation-delay:0.13s;
+      }
+      .loading span:nth-child(2){
+        animation-delay:0.26s;
+      }
+      .loading span:nth-child(3){
+        animation-delay:0.39s;
+      }
+      .loading span:nth-child(4){
+        animation-delay:0.52s;
+      }
+      .loading span:nth-child(5){
+        animation-delay:0.65s;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
