@@ -4,7 +4,6 @@
  * @LastEditors: わからないよう
  */
 import React from 'react';
-// import 'antd-mobile/dist/antd-mobile.css';
 import './App.scss';
 // import { TabBar } from 'antd-mobile';
 // import indexIcon from './lib/image/index/index-icon.png';
